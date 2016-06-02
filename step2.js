@@ -5,7 +5,3 @@
 .attr("cy",100)
 .attr("r",50)
 .attr("fill", "blue")
-
-.attr("stroke","black")
-
-.attr("stroke-width",10)

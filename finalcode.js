@@ -1,5 +1,5 @@
-var outerWidth = 300;
-var outerHeight = 250;
+var outerWidth = 500;
+var outerHeight = 450;
 var rMin = 1; // "r" stands for radius
 var rMax = 15;
 var xValue = "price";
@@ -7,14 +7,14 @@ var yValue = "star_avg";
 var rValue = "no_reviews";
 var colorValue = "brand";
 
-var svg = d3.select("body").append("svg")
-.attr("width", outerWidth)
-.attr("height", outerHeight);
-
 var xScale = d3.scale.linear().range([0, outerWidth]);
 var yScale = d3.scale.linear().range([outerHeight, 0]);
 var rScale = d3.scale.linear().range([rMin, rMax]);
 var colorScale = d3.scale.category10();
+
+var svg = d3.select("body").append("svg")
+.attr("width", outerWidth)
+.attr("height", outerHeight);
 
 function render(data){
 	xScale.domain(d3.extent(data, function (d){ return d[xValue]; }));
@@ -35,7 +35,7 @@ var data = [
 {star_avg: 4.1, no_reviews: 250, price: 45, brand: "sennheiser"},
 {star_avg: 4.4, no_reviews: 370, price: 60, brand: "sennheiser"}, 
 {star_avg: 4.2, no_reviews: 270, price: 55, brand: "sennheiser"}, 
-{star_avg: 48, no_reviews: 300, price: 53, brand: "sennheiser"},
+{star_avg: 4.8, no_reviews: 300, price: 53, brand: "sennheiser"},
 {star_avg: 3.1, no_reviews: 150, price: 35, brand: "bose"}, 
 {star_avg: 3.5, no_reviews: 400, price: 42, brand: "bose"},
 {star_avg: 3.6, no_reviews: 200, price: 34, brand: "bose"},

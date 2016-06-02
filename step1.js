@@ -1,4 +1,5 @@
 //Send data to everyone
+//Questions at the end
 //Import D3 into HTML
 //Start manipulating the DOM
 
