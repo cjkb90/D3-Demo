@@ -14,10 +14,7 @@ var rScale = d3.scale.linear().range([rMin, rMax]);
 	rScale.domain(d3.extent(data, function (d){ return d[rValue]; }));
 
 	//Finally, establish the value of the radius for each data point
-	.attr("r", function (d){ return rScale(d[rValue]);});
+	.attr("r", function (d){ return rScale(d[rValue]);})
 
-//Make a big bigger
-var outerWidth = 500;
-var outerHeight = 450;
 
 //Now we have dynamically sized radii

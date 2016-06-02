@@ -1,5 +1,5 @@
 //Remove Circle
-
+//Place Data at very top
 var data = [1,2,3];
 
 svg.selectAll("circle")
@@ -9,9 +9,11 @@ svg.selectAll("circle")
   .attr("cy", 50)
   .attr("r",  20)
 
-//Before the enter(), there are no circles in the HTML. Enter will dynamically append elements based on the data
+//Before the enter(), there are no circles in the HTML. 
+//Enter will dynamically append elements based on the data
 
 //Note that the display is not dynamic to the data
+//All three circles in one spot
 //This is where the scale comes in
 
   .attr("cx", function (d){ return scale(d); })

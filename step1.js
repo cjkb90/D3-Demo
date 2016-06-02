@@ -3,10 +3,10 @@
 //Import D3 into HTML
 //Start manipulating the DOM
 
-var outerWidth = 300;
-var outerHeight = 250;
+var outerWidth = 500;
+var outerHeight = 450;
 
-
+//First step is to append the SVG element to the body
 var svg = d3.select("body").append("svg")
 .attr("width", outerWidth)
 .attr("height", outerHeight)

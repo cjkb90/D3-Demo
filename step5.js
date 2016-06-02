@@ -32,7 +32,7 @@ var yScale = d3.scale.linear().range([outerHeight, 0]);
 var xValue = "price";
 var yValue = "star_avg";
 
-//Insert these into render function
+//Insert these into render function above var=circles
 //What extent does is it gets the maximum and minimum values
 	xScale.domain(d3.extent(data, function (d){ return d[xValue]; }));
 	yScale.domain(d3.extent(data, function (d){ return d[yValue]; }));
