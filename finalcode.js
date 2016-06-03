@@ -50,5 +50,4 @@ var data = [
 {star_avg: 5, no_reviews: 0, price: 80, brand: "beats"}
 ];
 
-
 render(data);
